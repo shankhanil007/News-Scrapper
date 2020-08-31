@@ -33,7 +33,8 @@ app.get("/", function (req, res) {
     //   //   await page.screenshot({path: 'example.png'});
 
     //   var news_data = await page.evaluate(() => ({
-    //     details: document.querySelector("h1").innerText
+    //     details: document.querySelector("div.description").innerText
+
     //   })
     //   )
     //   console.log(news_data);
@@ -71,7 +72,8 @@ app.get("/", function (req, res) {
           //   await page.screenshot({path: 'example.png'});
 
           var news_data = await page.evaluate(() => ({
-            details: document.querySelector("h1").innerText
+            headline: document.querySelector("h1").innerText,
+            text: document.querySelector("div.description").innerText
           })
           )
           console.log(news_data);
