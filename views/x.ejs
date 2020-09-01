@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+  <h1>Hello</h1>
+
+  <br>
+
+  <% data.forEach(function(info){ %>
+
+
+  <div>
+    <h4><%= info.headline %> </h4>
+    <p> <%= info.text %> </p>
+
+  </div>
+  <br>
+
+  <% }) %>
+
+
+</body>
+
 </html>
