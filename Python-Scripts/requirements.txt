@@ -1,0 +1,7 @@
+requests
+regex
+pandas
+beautifulsoup4
+tabulate
+lxml
+flask
